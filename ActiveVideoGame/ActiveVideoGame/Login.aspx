@@ -8,8 +8,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
+    <div><p>Please enter your user ID and your password.</p>
+
+User_ID: <asp:TextBox ID="LoginTextBox" runat="server" style="text-align:center"></asp:TextBox><br />
+Password: <asp:TextBox ID="PasswordTextBox" runat="server" style="text-align:center"></asp:TextBox><br />
+<asp:LinkButton ID="LoginLinkButton" runat="server" PostBackUrl="~/MainMenu.aspx">Login</asp:LinkButton>
     </div>
     </form>
 </body>
