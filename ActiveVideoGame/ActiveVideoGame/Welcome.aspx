@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>Welcome on AVG website ! PLease login or register if you want to suscribe.
+    <div><p>Welcome on AVG website ! PLease login or register if you want to suscribe.</p>
         <asp:LinkButton ID="LinkButtonLogin" runat="server" PostBackUrl="~/Login.aspx">Login</asp:LinkButton>
         <asp:LinkButton ID="LinkButtonRegister" runat="server" PostBackUrl="~/Register.aspx">Register</asp:LinkButton>
     </div>

@@ -10,78 +10,69 @@
 namespace ActiveVideoGame {
     
     
-    public partial class Register {
+    public partial class MainMenu {
         
         /// <summary>
-        /// form1 control.
+        /// characterSelection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.HyperLink characterSelection;
         
         /// <summary>
-        /// FNameTextBox control.
+        /// characterManagement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FNameTextBox;
+        protected global::System.Web.UI.WebControls.HyperLink characterManagement;
         
         /// <summary>
-        /// LNameTextBox control.
+        /// challengePage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LNameTextBox;
+        protected global::System.Web.UI.WebControls.HyperLink challengePage;
         
         /// <summary>
-        /// EmailTextBox control.
+        /// fightSummary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
+        protected global::System.Web.UI.WebControls.HyperLink fightSummary;
         
         /// <summary>
-        /// IDTextBox control.
+        /// exerciseUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IDTextBox;
+        protected global::System.Web.UI.WebControls.HyperLink exerciseUpload;
         
         /// <summary>
-        /// PasswordTextBox control.
+        /// exerciseManagement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
+        protected global::System.Web.UI.WebControls.HyperLink exerciseManagement;
         
         /// <summary>
-        /// RadioButton1 control.
+        /// hof control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
-        
-        /// <summary>
-        /// RegisterLinkButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton RegisterLinkButton;
+        protected global::System.Web.UI.WebControls.HyperLink hof;
     }
 }

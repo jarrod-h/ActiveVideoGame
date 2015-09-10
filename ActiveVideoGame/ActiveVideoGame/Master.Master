@@ -4,18 +4,28 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>B.E.T.T.E.R</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
-    This is a test!
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+    <div id="container">
+        <nav class="nav">
+        </nav>
+        This is a test!
+        <form id="form1" runat="server">
+            <div id="content-styling">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <footer>
+            <section>
+                Copyright &copy; 2015 NewU Dev Co
+            </section>
+        </footer>
     </div>
-    </form>
 </body>
 </html>
