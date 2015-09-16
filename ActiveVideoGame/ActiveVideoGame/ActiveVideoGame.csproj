@@ -60,7 +60,9 @@
     <Content Include="ChallengePage.aspx" />
     <Content Include="CharacterManagement.aspx" />
     <Content Include="CharacterSelection.aspx" />
+    <Content Include="css\login.css" />
     <Content Include="css\main.css" />
+    <Content Include="css\mainmenu.css" />
     <Content Include="ExerciseManagement.aspx" />
     <Content Include="ExerciseUpload.aspx" />
     <Content Include="FightOutcome.aspx" />
