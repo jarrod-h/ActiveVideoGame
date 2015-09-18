@@ -1,18 +1,9 @@
 ﻿/************************************
     Jarrod HILES
-    CSS for the Login Page (Login.aspx)
+    CSS for the Registration Page (register.aspx)
 
 ************************************/
 
-#registration {
-    display:block;
-    position:relative;
-    padding: 0 0 0 20px;
-}
-
-#login_form {
-    text-align:left;
-}
 
 div.section {
     margin-bottom: 30px;
@@ -22,12 +13,23 @@ div.section {
         margin-bottom: 8px;
     }
 
-input#MainContent_txtUsername {
+#frmRegister {
+    padding-left: 20px;
+}
 
+input#MainContent_txtFirstName {
+}
+
+input#MainContent_txtLastName {
+}
+
+input#MainContent_txtEmailAddress {
 }
 
 input#MainContent_txtPassword {
+}
 
+input#MainContent_txtConfirmPassword {
 }
 
 input.txtInput {
@@ -38,7 +40,7 @@ input.txtInput {
     display:block;
 }
 
-input#MainContent_btnLogin {
+input#MainContent_btnRegister {
     display:block;
     font-weight:bold;
     background-color:rgba(255,0,0,1);
@@ -48,7 +50,7 @@ input#MainContent_btnLogin {
     padding:3px 12px 5px;
     border: 0;
 }
-input#MainContent_btnLogin:hover {
+input#MainContent_btnRegister:hover {
     background-color:rgba(255,25,25,0.8);
     cursor:pointer;
 }

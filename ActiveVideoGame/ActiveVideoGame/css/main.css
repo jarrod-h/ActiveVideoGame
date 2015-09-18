@@ -14,18 +14,22 @@ body {
 }
 
 #content_frame {
-    height:500px;
+    display:inline-block;
+    height:100%;
     width:100%;
     padding: 0px;
 }
 
 div#content_window {
-    height:320px;
-    width:50%;
+    min-height:320px;
+    height:85%;
+    width:90%;
+    max-width: 800px;
     border:10px solid yellow;
     border-radius:2em;
-    margin: 20px auto 0px auto;
+    margin: 20px auto 20px auto;
     background-color:rgba(255, 255, 225, 0.6);
+    padding: 20px;
 }
 
 #header {
@@ -37,8 +41,10 @@ div#content_window {
 }
 a {
     text-decoration:none;
-    color:black;
 }
+    a:hover {
+        text-decoration:underline;
+    }
 #logo {
     float:left;
     display:inline-block;
@@ -88,4 +94,6 @@ footer {
     display:flex;
     justify-content:center;
     align-items:center;
+    bottom:0;
+    left:0;
 }

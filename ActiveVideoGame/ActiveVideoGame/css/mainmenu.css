@@ -7,17 +7,16 @@
 div#MainMenu {
     float:left;
     display:inline-block;
-    width:180px;
+    width:170px;
     height: 100%;
     background-color: rgba(0,0,0,1);
 }
 
 div#content_window {
-    float:left;
+    float:right;
     display:inline-block;
-    height:88%;
     width:74%;
-    margin: 20px 0px 20px 20px;
+    margin: 20px 20px 20px 20px;
 }
 
 ul {

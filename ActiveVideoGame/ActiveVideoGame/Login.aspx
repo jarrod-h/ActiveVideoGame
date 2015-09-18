@@ -17,13 +17,21 @@
                 <div class="section">
                     <%--Error message div to be inserted here; displayed when incorrect username and/or password or when incomplete credentials are submitted--%>
                     <div class="row">
-                        <asp:TextBox ID="txtUsername" runat="server" placeholder="Username"></asp:TextBox></div>
+                        <asp:TextBox Class="txtInput" ID="txtUsername" runat="server" placeholder="Username"></asp:TextBox>
+                    </div>
                     <div class="row">
-                        <asp:TextBox ID="txtPassword" runat="server" TextMode="password" placeholder="Password"></asp:TextBox></div>
+                        <asp:TextBox Class="txtInput" ID="txtPassword" runat="server" TextMode="password" placeholder="Password"></asp:TextBox>
+                    </div>
                 </div>
                 <div class="section">
                     <div class="row">
-                        <asp:Button ID="btnLogin" Text="Login" runat="server" /></div>
+                        <asp:Button ID="btnLogin" Text="Login" runat="server" />
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="row">
+                        Don't have and account? <a href="~/Register.aspx">Sign up!</a>
+                    </div>
                 </div>
             </div>
         </form>
