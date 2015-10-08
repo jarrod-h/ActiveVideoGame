@@ -12,28 +12,34 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color:rgba(80, 180, 255, 1);
 }
-
-<<<<<<< HEAD
 #Header {
+=======
+
+
+div#MainMenu {
+    width: 100%;
+    display:block;
 }
 
-#nav_logo {
-    float: left;
-    height: 15px;
-    width: 55px;
+div.navMenu{
+    float:left;
+    width:150px;
+    /*height:;*/
+    background-color:lightgrey;
 }
 
-#nav_loginButtons {
-    display: inline-block;
-    padding-left:90%;
-    clear: left
-
+ul {
+    padding:0 0 0 0;
+}
 =======
 #content_frame {
     display:inline-block;
     height:100%;
     width:100%;
     padding: 0px;
+=======
+div.charDisplay{
+    float: right;
 }
 
 div#content_window {
@@ -57,7 +63,6 @@ div#content_window {
 }
 a {
     text-decoration:none;
->>>>>>> origin/jarrod_branch
 }
     a:hover {
         text-decoration:underline;
@@ -103,7 +108,6 @@ a {
     height:80%;
     padding: 0px 10px 0px 10px;
 }
-<<<<<<< HEAD
 
 Image {
     height: 10px;
@@ -121,4 +125,3 @@ footer {
     bottom:0;
     left:0;
 }
->>>>>>> origin/jarrod_branch

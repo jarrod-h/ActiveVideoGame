@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CharacterSelection.aspx.cs" Inherits="ActiveVideoGame.WebForm2" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CharacterSelection.aspx.cs" Inherits="ActiveVideoGame.WebForm2" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="selection">
+        <div class="selection">
         <p>Welcome to the Character Selection page. Please select one of the 12 characters available.</p>
         <asp:DropDownList ID="DropDownList1" runat="server">
             <asp:ListItem>Barbario</asp:ListItem>
@@ -39,7 +38,6 @@
     </form>
 </body>
 </html>
-=======
 ﻿<%@ Page Title="Character Selection" Language="C#" AutoEventWireup="true" CodeBehind="CharacterSelection.aspx.cs" Inherits="ActiveVideoGame.WebForm2" MasterPageFile="Master.Master" ClientIDMode="Inherit" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -65,4 +63,3 @@
         </div>
     </div>
 </asp:Content>
->>>>>>> origin/jarrod_branch

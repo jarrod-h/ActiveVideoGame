@@ -87,10 +87,7 @@
     <Content Include="Images\cable.png" />
     <Content Include="Images\harley.jpg" />
     <Content Include="Images\henchman.png" />
-<<<<<<< HEAD
     <Content Include="Images\INFT3050_Assignment2_BetterLogo.gif" />
-=======
->>>>>>> origin/jarrod_branch
     <Content Include="Images\Leah.jpg" />
     <Content Include="Images\leviatron.jpg" />
     <Content Include="Images\Shaman.jpg" />

@@ -22,7 +22,6 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
-<<<<<<< HEAD
         /// lnk_logo control.
         /// </summary>
         /// <remarks>
@@ -57,11 +56,9 @@ namespace ActiveVideoGame {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+		
         /// <summary>
-=======
->>>>>>> origin/jarrod_branch
-        /// MainContent control.
+		/// MainContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

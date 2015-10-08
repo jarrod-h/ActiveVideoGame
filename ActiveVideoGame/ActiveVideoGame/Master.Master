@@ -4,28 +4,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>B.E.T.T.E.R</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
-
     </asp:ContentPlaceHolder>
 </head>
 <body>
-<<<<<<< HEAD
     <div id="container">
-        <section id="Header">
-            <div id="nav_logo">
-                <asp:HyperLink ID="lnk_logo" runat="server">BETTER</asp:HyperLink>
-            </div>
-            <div id="nav_loginButtons">
-                <asp:HyperLink ID="lnk_signUp" runat="server">Sign Up</asp:HyperLink>
-                <asp:HyperLink ID="lnk_signIn" runat="server">Sign In</asp:HyperLink>
-            </div>
-        </section>
+        <nav class="nav">
+        </nav>
         This is a test!
         <form id="form1" runat="server">
             <div id="content-styling">
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
-
                 </asp:ContentPlaceHolder>
             </div>
         </form>
@@ -35,7 +25,6 @@
             </section>
         </footer>
     </div>
-=======
 <div id="header">
     <a href="Welome.aspx"><div id="logo">BETTER</div></a>
     <a href="Login.aspx"><div id="lnk_signIn">Sign In</div></a>
@@ -47,7 +36,6 @@
             [CONTENT GOES HERE]
         </asp:ContentPlaceHolder>
 </div>
-<footer>&copy Copyright 2015 NewU</footer>              
->>>>>>> origin/jarrod_branch
+<footer>&copy Copyright 2015 NewU</footer>
 </body>
 </html>

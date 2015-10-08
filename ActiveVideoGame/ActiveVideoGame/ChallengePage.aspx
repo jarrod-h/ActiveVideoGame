@@ -3,9 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/challengepage.css" />
 </asp:Content>
-<<<<<<< HEAD
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-=======
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="content_window">
@@ -46,5 +44,5 @@
             <asp:Button ID="btnChallenge" Text="Challenge!" runat="server" />
         </form>
     </div>
->>>>>>> origin/jarrod_branch
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
