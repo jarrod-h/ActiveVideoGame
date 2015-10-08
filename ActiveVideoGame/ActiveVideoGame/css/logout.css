@@ -1,0 +1,13 @@
+﻿/************************************
+    Jarrod HILES
+    CSS for the Logout Page (Logout.aspx)
+
+************************************/
+
+div.section {
+    margin-bottom: 30px;
+}
+
+    div.row, div.section > div {
+        margin-bottom: 8px;
+    }

@@ -13,6 +13,7 @@ namespace ActiveVideoGame {
     public partial class WebForm2 {
         
         /// <summary>
+<<<<<<< HEAD
         /// form1 control.
         /// </summary>
         /// <remarks>
@@ -31,6 +32,8 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
+=======
+>>>>>>> origin/jarrod_branch
         /// Barbario control.
         /// </summary>
         /// <remarks>

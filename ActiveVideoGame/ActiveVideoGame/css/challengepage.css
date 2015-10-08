@@ -1,0 +1,24 @@
+﻿/************************************
+    Jarrod HILES
+    CSS for the Challenge Page (ChallengePage.aspx)
+
+************************************/
+
+ul {
+    list-style-type: none;
+}
+
+input#MainContent_btnChallenge {
+    display:block;
+    font-weight:bold;
+    background-color:rgba(255,0,0,1);
+    color:rgba(255,255,255,1);
+    height:2.2em;
+    min-width: 6em;
+    padding:3px 12px 5px;
+    border: 0;
+}
+input#MainContent_btnChallenge:hover {
+    background-color:rgba(255,25,25,0.8);
+    cursor:pointer;
+}

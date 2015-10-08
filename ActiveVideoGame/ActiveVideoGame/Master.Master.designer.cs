@@ -22,6 +22,7 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
+<<<<<<< HEAD
         /// lnk_logo control.
         /// </summary>
         /// <remarks>
@@ -58,6 +59,8 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+=======
+>>>>>>> origin/jarrod_branch
         /// MainContent control.
         /// </summary>
         /// <remarks>

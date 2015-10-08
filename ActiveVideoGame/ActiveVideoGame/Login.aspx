@@ -1,19 +1,39 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ActiveVideoGame.Login" %>
+﻿<%@ Page Title="Login" Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ActiveVideoGame.Login" MasterPageFile="Master.Master" ClientIDMode="Inherit" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div><p>Please enter your user ID and your password.</p>
-
-User_ID: <asp:TextBox ID="LoginTextBox" runat="server" style="text-align:center"></asp:TextBox><br />
-Password: <asp:TextBox ID="PasswordTextBox" runat="server" style="text-align:center"></asp:TextBox><br />
-<asp:LinkButton ID="LoginLinkButton" runat="server" PostBackUrl="~/MainMenu.aspx">Login</asp:LinkButton>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="content_window">
+        <form id="registration" runat="server">
+            <div id="login_form">
+                <div class="section">
+                    <div class="row">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="row">Please enter your username and password.</div>
+                </div>
+                <div class="section">
+                    <%--Error message div to be inserted here; displayed when incorrect username and/or password or when incomplete credentials are submitted--%>
+                    <div class="row">
+                        <asp:TextBox Class="txtInput" ID="txtUsername" runat="server" placeholder="Username"></asp:TextBox>
+                    </div>
+                    <div class="row">
+                        <asp:TextBox Class="txtInput" ID="txtPassword" runat="server" TextMode="password" placeholder="Password"></asp:TextBox>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="row">
+                        <asp:Button ID="btnLogin" Text="Login" runat="server" />
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="row">
+                        Don't have and account? <a href="~/Register.aspx">Sign up!</a>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
