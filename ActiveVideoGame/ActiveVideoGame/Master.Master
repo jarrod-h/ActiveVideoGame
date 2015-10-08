@@ -5,19 +5,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>B.E.T.T.E.R</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <asp:ContentPlaceHolder ID="head" runat="server">
+
     </asp:ContentPlaceHolder>
 </head>
 
 <body>
     <div id="container">
-        <nav class="nav">
-        </nav>
+        <section id="Header">
+            <div id="nav_logo">
+                <asp:HyperLink ID="lnk_logo" runat="server">BETTER</asp:HyperLink>
+            </div>
+            <div id="nav_loginButtons">
+                <asp:HyperLink ID="lnk_signUp" runat="server">Sign Up</asp:HyperLink>
+                <asp:HyperLink ID="lnk_signIn" runat="server">Sign In</asp:HyperLink>
+            </div>
+        </section>
         This is a test!
         <form id="form1" runat="server">
             <div id="content-styling">
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
                 </asp:ContentPlaceHolder>
             </div>
         </form>
