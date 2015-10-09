@@ -1,4 +1,9 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ActiveVideoGame.Master" %>
+﻿<%--Authors: Jarrod Hiles (c3144253) and Said Djellouli (c3242682)
+    Date: 29/08/2015
+    Description: This is the Master file which provides a theme-like template for all other pages.
+     it also displays the navigation header and footer.--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ActiveVideoGame.Master" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6,10 +11,12 @@
     <title>B.E.T.T.E.R</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
+        <%--css or javascript files for other pages are added here--%>
     </asp:ContentPlaceHolder>
 </head>
 
 <body>
+    <%--PAGE CONTAINER--%>
     <div id="container">
         <nav class="nav">
             <div id="header">
@@ -26,8 +33,10 @@
         </nav>
             <div id="content-styling">
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    <%--page content goes here--%>
                 </asp:ContentPlaceHolder>
             </div>
+        <%--FOOTER--%>
         <footer>
             <section>
                 Copyright &copy; 2015 NewU Dev Co

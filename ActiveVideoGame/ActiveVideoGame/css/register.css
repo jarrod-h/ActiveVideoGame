@@ -10,11 +10,15 @@ div.section {
 }
 
     div.row, div.section > div {
-        margin-bottom: 8px;
+        margin-bottom: 2px;
     }
 
 #frmRegister {
     padding-left: 20px;
+}
+
+ul {
+    margin-left: 20px;
 }
 
 input#MainContent_txtFirstName {
@@ -33,8 +37,6 @@ input#MainContent_txtConfirmPassword {
 }
 
 input.txtInput {
-    height:1.6em;
-    width: 45%;
     max-width:250px;
     padding: 4px 8px;
     display:block;

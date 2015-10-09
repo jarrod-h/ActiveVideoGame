@@ -1,4 +1,9 @@
-﻿<%@ Page Title="Login" Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ActiveVideoGame.Login" MasterPageFile="Master.Master" ClientIDMode="Inherit" %>
+﻿
+<%--Authors: Jarrod Hiles (c3144253) and Said Djellouli (c3242682)
+    Date: 10/09/2015
+    Description: This is the login page, simply containing username and password fields.--%>
+
+<%@ Page Title="Login" Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ActiveVideoGame.Login" MasterPageFile="Master.Master" ClientIDMode="Inherit" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/login.css" />

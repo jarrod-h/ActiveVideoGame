@@ -6,3 +6,26 @@
 
 body {
 }
+
+input.txtInput {
+    height:1.6em;
+    width: 45%;
+    max-width:250px;
+    padding: 4px 8px;
+    display:block;
+}
+
+input#MainContent_btnCancelFight,  input#MainContent_btnBeginFight{
+    display:block;
+    font-weight:bold;
+    background-color:rgba(255,0,0,1);
+    color:rgba(255,255,255,1);
+    height:2.2em;
+    min-width: 6em;
+    padding:3px 12px 5px;
+    border: 0;
+}
+input#MainContent_btnCancelFight:hover, input#MainContent_btnBeginFight:hover{
+    background-color:rgba(255,25,25,0.8);
+    cursor:pointer;
+}

@@ -6,3 +6,7 @@
 
 body {
 }
+
+div#content_window {
+    padding-left: 10px;
+}

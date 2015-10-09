@@ -1,4 +1,7 @@
-﻿<%@ Page Title="Hall of Fame" Language="C#" MasterPageFile="Master.Master" AutoEventWireup="true" CodeBehind="Hof.aspx.cs" Inherits="ActiveVideoGame.Hof" ClientIDMode="Inherit"%>
+﻿<%--Authors: Jarrod Hiles (c3144253) and Said Djellouli (c3242682)
+    Date: 10/09/2015
+    Description: This page contains all characters which have been retired and admitted to the hall of fame.--%>
+<%@ Page Title="Hall of Fame" Language="C#" MasterPageFile="Master.Master" AutoEventWireup="true" CodeBehind="Hof.aspx.cs" Inherits="ActiveVideoGame.Hof" ClientIDMode="Inherit"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/hof.css" />
