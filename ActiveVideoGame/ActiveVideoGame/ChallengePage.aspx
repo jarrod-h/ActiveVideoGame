@@ -3,46 +3,61 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/challengepage.css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="content_window">
         <h1>Challenge</h1>
-        <form runat="server">
+        <form action="FightPage.aspx" runat="server">
             <div id="user_monsters">
-                <ul>
-                    <li>
-                        <div id="user_monster_1">
-                            <div class="image"></div>
-                            <div class="stats"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="user_monster_2">
-                            <div class="image"></div>
-                            <div class="stats"></div>
-                        </div>
-                    </li>
-                </ul>
+                <div class="image"><img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+                <div class="image"><img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+                <div class="image"><img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+                <div class="image"><img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+            </div>
+            <div id="vs_text">
+                <h1>vs.</h1>
+                <asp:Button ID="btnChallenge" Text="Challenge!" runat="server" />
             </div>
             <div id="other_monsters">
-                <ul>
-                    <li>
-                        <div id="Div1">
-                            <div class="image"></div>
-                            <div class="stats"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="Div2">
-                            <div class="image"></div>
-                            <div class="stats"></div>
-                        </div>
-                    </li>
-                </ul>
+                <div class="image"><img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+                <div class="image"><img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+                <div class="image"><img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
             </div>
-            <asp:Button ID="btnChallenge" Text="Challenge!" runat="server" />
         </form>
     </div>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>

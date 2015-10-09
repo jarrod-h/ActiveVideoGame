@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="content_window">
-        <form id="registration" runat="server">
+        <form action="MainMenu.aspx" id="registration" runat="server">
             <div id="login_form">
                 <div class="section">
                     <div class="row">

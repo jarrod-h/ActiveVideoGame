@@ -9,7 +9,7 @@
             <li>
                 <asp:HyperLink ID="characterSelection" runat="server" NavigateUrl="/CharacterSelection.aspx">Character Selection</asp:HyperLink></li>
             <li>
-                <asp:HyperLink ID="characterManagement" runat="server" NavigateUrl="/CharacterManagement.aspx">Character Managemet</asp:HyperLink></li>
+                <asp:HyperLink ID="characterManagement" runat="server" NavigateUrl="/CharacterManagement.aspx">Character Management</asp:HyperLink></li>
             <li>
                 <asp:HyperLink ID="challengePage" runat="server" NavigateUrl="/ChallengePage.aspx">Challenge</asp:HyperLink></li>
             <li>

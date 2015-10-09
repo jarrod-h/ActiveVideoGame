@@ -8,34 +8,32 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
     <div id="container">
         <nav class="nav">
+            <div id="header">
+                <a href="Welcome.aspx">
+                    <div id="logo">BETTER</div>
+                </a>
+                <a href="Login.aspx">
+                    <div id="lnk_signIn">Sign In</div>
+                </a>
+                <a href="Register.aspx">
+                    <div id="lnk_register">Sign Up</div>
+                </a>
+            </div>
         </nav>
-        This is a test!
-        <form id="form1" runat="server">
             <div id="content-styling">
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-        </form>
         <footer>
             <section>
                 Copyright &copy; 2015 NewU Dev Co
             </section>
         </footer>
     </div>
-<div id="header">
-    <a href="Welome.aspx"><div id="logo">BETTER</div></a>
-    <a href="Login.aspx"><div id="lnk_signIn">Sign In</div></a>
-    <a href="Register.aspx"><div id="lnk_register">Register</div></a>
-</div>
 
-<div id="content_frame">
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            [CONTENT GOES HERE]
-        </asp:ContentPlaceHolder>
-</div>
-<footer>&copy Copyright 2015 NewU</footer>
 </body>
 </html>

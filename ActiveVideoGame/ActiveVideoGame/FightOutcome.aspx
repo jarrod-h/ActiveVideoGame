@@ -6,6 +6,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="content_window">
-        <h1>Fight Outcome</h1>
+        <a href="MainMenu.aspx"><h1>Fight Outcome</h1></a>
     </div>
 </asp:Content>

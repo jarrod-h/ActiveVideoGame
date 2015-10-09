@@ -5,24 +5,33 @@
 ************************************/
 
 div#MainMenu {
-    float:left;
     display:inline-block;
     width:170px;
     height: 100%;
     background-color: rgba(0,0,0,1);
+    padding-left:10px;
 }
 
 div#content_window {
-    float:right;
     display:inline-block;
-    width:74%;
+    float:right;
     margin: 20px 20px 20px 20px;
 }
 
 ul {
     color:white;
+    list-style-type:none;
+}
+
+li {
+    padding-top: 4px;
 }
 
 li a{
     color: white;
+}
+
+li a:hover{
+    background-color:white;
+    color: black;
 }
