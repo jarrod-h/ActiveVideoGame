@@ -15,11 +15,16 @@
     <div id="content_window">
         <div id="content">
             <h1>Welcome to the Battle</h1>
-            <p>Welcome to AVG website! PLease login or register to battle!.</p>
+            <p>Welcome to AVG website! Please login or register to battle!.</p>
             <%--NEWS ITEMS WILL GO BELOW--%>
             <div class="welcome_content">
                 <h2>Coming Soon</h2>
                 <p>Battling Elemental Titans Through Exercise Routines (B.E.T.T.E.R.) is coming soon!</p>
+                <h2>What we're about</h2>
+                <p>Active Video Games have developed Battling Elemental Titans Through Exercise Routines (B.E.T.T.E.R.). <%-- 
+                    --%>Combating obesity through exercise-incentive based gameplay AVG is launching an assault on obesity. <%-- 
+                    --%>Kids can easily sign up with their parent approval. Parents monitor their kids activity and award them points. <%-- 
+                    --%>These points can be used to upgrade their monster and battle it out in the online arena.</p>
             </div>
         </div>
         

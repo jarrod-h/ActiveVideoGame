@@ -26,6 +26,8 @@
                     </div>
                     <div class="row">
                         <asp:TextBox Class="txtInput" ID="txtPassword" runat="server" TextMode="password" placeholder="Password"></asp:TextBox>
+                        <%--clicking the link below will email the uesr their password if they have entered their email address--%>
+                        <a href="~/ForgotPassword.aspx">Forgot Password</a> <%--LINK TO BE AMMENDED/CREATED--%>
                     </div>
                 </div>
                 <div class="section">

@@ -8,6 +8,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/mainmenu.css" />
 </asp:Content>
+<%--ASP CONTENT TO GO HERE, "Welcome [NAME] will be displayed alongside the users points balance--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="MainMenuScreen">
         <%--LEFT HAND SIDE NAVIGATIONAL MENU--%>
@@ -30,10 +31,37 @@
             </ul>
         </div>
         <%--RIGHT HAND SIDE CONTENT WINDOW--%>
-        <%--This dynamic content window will display the users current selected character and it's level and stats--%>
+        <%--This dynamic content window will display the users characters alongside their name, level and stats--%>
         <div id="content_window">
-            <div class="charDisplay">
-
+            <div id="user_monsters">
+                <div class="image">
+                    <img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+                <div class="image">
+                    <img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+                <div class="image">
+                    <img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
+                <div class="image">
+                    <img src="Images/bowser.jpg" /></div>
+                <div class="stats">
+                    <p>Name: </p>
+                    <p>Level: </p>
+                    <p>Stats: </p>
+                </div>
             </div>
         </div>
     </div>

@@ -20,10 +20,13 @@ div#MainMenu {
 
 div#content_window {
     display:block;
-    margin-left:14em;
+    margin:20px auto 20px auto;
     height: 90%;
     min-height:200px;
-    max-height: inherit;
+    max-height: 500px;
+    max-width:675px;
+    /*padding is made larger from the default within main.css to better fill the screen space*/
+    padding: 55px 55px 55px 55px;
 }
 
 ul {
@@ -44,4 +47,41 @@ li a:hover{
     text-decoration:none;
     background-color:white;
     color: black;
+}
+
+div#user_monsters{
+    background-color:rgba(100, 100, 100, 1);
+    min-width: 575px;
+    max-height:475px;
+    width:100%;
+    overflow-y:scroll;
+}
+
+div.image{
+    float:left;
+    display:inline-block;
+    height:180px;
+    width: 20%;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(250, 208, 28);
+    margin:5px 5px 5px 5px;
+}
+img{
+    max-width:100%;
+    max-height:100%;
+    display:inline-block;
+    top:50%;
+    transform: translateY(5%);
+    margin:auto;
+}
+div.stats{
+    float:right;
+    display:inline-block;
+    height:180px;
+    width: 70%;
+    margin-left: 5px;
+    margin-right:5px;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(250, 208, 28);
+    margin:5px 5px 5px 0px;
 }

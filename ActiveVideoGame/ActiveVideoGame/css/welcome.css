@@ -3,10 +3,14 @@
     CSS for the Login Page (Login.aspx)
 
 ************************************/
-#content {
-    padding: 0px 0 0 20px;
+#content_window {
+    padding: 20px 20px 20px 20px;
 }
 
-.welcome_content {
-    margin-left: 20px;
+.welcome_content>h2{
+    margin-bottom:0px;
+}
+
+.welcome_content>p{
+    margin-top:0px;
 }

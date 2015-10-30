@@ -23,6 +23,7 @@
                 <a href="Welcome.aspx">
                     <div id="logo">BETTER</div>
                 </a>
+                <%--ASP CONTENT PLACEHOLDER TO GO HERE, "Welcome [NAME] will be displayed alongside the users points balance--%>
                 <a href="Login.aspx">
                     <div id="lnk_signIn">Sign In</div>
                 </a>
