@@ -11,7 +11,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="content_window">
-        <form action="MainMenu.aspx" id="registration" runat="server">
+        <form id="registration" runat="server">
             <div id="login_form">
                 <div class="section">
                     <div class="row">
@@ -25,14 +25,14 @@
                         <asp:TextBox Class="txtInput" ID="txtUsername" runat="server" placeholder="Username"></asp:TextBox>
                     </div>
                     <div class="row">
-                        <asp:TextBox Class="txtInput" ID="txtPassword" runat="server" TextMode="password" placeholder="Password"></asp:TextBox>
+                        <asp:TextBox Class="txtInput" ID="txtPassword" runat="server" TextMode="password" placeholder="Password">ABCabc123?!</asp:TextBox>
                         <%--clicking the link below will email the uesr their password if they have entered their email address--%>
                         <a href="~/ForgotPassword.aspx">Forgot Password</a> <%--LINK TO BE AMMENDED/CREATED--%>
                     </div>
                 </div>
                 <div class="section">
                     <div class="row">
-                        <asp:Button ID="btnLogin" Text="Login" runat="server" />
+                        <asp:Button ID="btnLogin" Text="Login" runat="server" OnClick="btnLogin_Click" />
                     </div>
                 </div>
                 <div class="section">
