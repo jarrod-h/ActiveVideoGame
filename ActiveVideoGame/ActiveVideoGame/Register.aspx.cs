@@ -13,5 +13,13 @@ namespace ActiveVideoGame
         {
 
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                Response.Redirect("MainMenu.aspx");
+            }
+        }
     }
 }

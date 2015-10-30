@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.1.4\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -60,19 +63,49 @@
     <Content Include="ChallengePage.aspx" />
     <Content Include="CharacterManagement.aspx" />
     <Content Include="CharacterSelection.aspx" />
+    <Content Include="css\challengepage.css" />
+    <Content Include="css\charactermanagement.css" />
+    <Content Include="css\characterselection.css" />
+    <Content Include="css\exercisemanagement.css" />
+    <Content Include="css\exerciseupload.css" />
+    <Content Include="css\fight.css" />
+    <Content Include="css\fightoutcome.css" />
+    <Content Include="css\fightsummary.css" />
+    <Content Include="css\hof.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\logout.css" />
     <Content Include="css\main.css" />
+    <Content Include="css\mainmenu.css" />
+    <Content Include="css\register.css" />
+    <Content Include="css\welcome.css" />
     <Content Include="ExerciseManagement.aspx" />
     <Content Include="ExerciseUpload.aspx" />
     <Content Include="FightOutcome.aspx" />
     <Content Include="FightPage.aspx" />
     <Content Include="FightSummary.aspx" />
     <Content Include="Hof.aspx" />
+    <Content Include="Images\barbario.jpg" />
+    <Content Include="Images\bowser.jpg" />
+    <Content Include="Images\bulgarov.jpg" />
+    <Content Include="Images\cable.png" />
+    <Content Include="Images\harley.jpg" />
+    <Content Include="Images\henchman.png" />
+    <Content Include="Images\Leah.jpg" />
+    <Content Include="Images\leviatron.jpg" />
+    <Content Include="Images\Shaman.jpg" />
+    <Content Include="Images\shavata.jpg" />
+    <Content Include="Images\thanos.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="MainMenu.aspx" />
     <Content Include="Master.Master" />
     <Content Include="Register.aspx" />
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Welcome.aspx" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

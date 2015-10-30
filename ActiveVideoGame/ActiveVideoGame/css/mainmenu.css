@@ -1,0 +1,87 @@
+﻿/************************************
+    Jarrod HILES
+    CSS for the Master Page (Master.Master)
+
+************************************/
+div.MainMenuScreen {
+    display:block;
+    height: 100%;
+}
+div#MainMenu {
+    position: absolute;
+    top:50px;
+    left:0;
+    width:12em;
+    display:block;
+    height: 90%;
+    background-color: rgba(0,0,0,1);
+    padding-left:10px;
+}
+
+div#content_window {
+    display:block;
+    margin:20px auto 20px auto;
+    height: 90%;
+    min-height:200px;
+    max-height: 500px;
+    max-width:675px;
+    /*padding is made larger from the default within main.css to better fill the screen space*/
+    padding: 55px 55px 55px 55px;
+}
+
+ul {
+    color:white;
+    list-style-type:none;
+}
+
+li {
+    padding-top: 4px;
+    margin-top:10px;
+}
+
+li a{
+    color: white;
+}
+
+li a:hover{
+    text-decoration:none;
+    background-color:white;
+    color: black;
+}
+
+div#user_monsters{
+    background-color:rgba(100, 100, 100, 1);
+    min-width: 575px;
+    max-height:475px;
+    width:100%;
+    overflow-y:scroll;
+}
+
+div.image{
+    float:left;
+    display:inline-block;
+    height:180px;
+    width: 20%;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(250, 208, 28);
+    margin:5px 5px 5px 5px;
+}
+img{
+    max-width:100%;
+    max-height:100%;
+    display:inline-block;
+    top:50%;
+    transform: translateY(5%);
+    margin:auto;
+}
+div.stats{
+    float:right;
+    display:inline-block;
+    height:180px;
+    width: 70%;
+    margin-left: 5px;
+    margin-right:5px;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(250, 208, 28);
+    margin:5px 5px 5px 0px;
+}
