@@ -25,6 +25,8 @@
                     --%>Combating obesity through exercise-incentive based gameplay AVG is launching an assault on obesity. <%-- 
                     --%>Kids can easily sign up with their parent approval. Parents monitor their kids activity and award them points. <%-- 
                     --%>These points can be used to upgrade their monster and battle it out in the online arena.</p>
+                <h2>Hall Of Fame</h2>
+                <%-- HALL OF FAME NEEDS TO BE DISPLAYED ON THIS PAGE--%>
             </div>
         </div>
         

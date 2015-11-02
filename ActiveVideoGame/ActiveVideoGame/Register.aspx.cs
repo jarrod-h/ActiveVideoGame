@@ -22,7 +22,7 @@ namespace ActiveVideoGame
 
             //if (Page.IsValid)
             //{
-                
+
             //}
             int userId = 0;
             string constr = ConfigurationManager.ConnectionStrings["INFT3050Ass1"].ConnectionString;
@@ -33,11 +33,12 @@ namespace ActiveVideoGame
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@Str_PK_username", txtUsername.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Str_password", txtPassword.Text.Trim());
-                        cmd.Parameters.AddWithValue("@Str_email", txtEmailAddress.Text.Trim());
-                        //cmd.Parameters.AddWithValue("@First_name", txtFirstName.Text.Trim());
-                        //cmd.Parameters.AddWithValue("@Last_name", txtLastName.Text.Trim());
+                        cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text.Trim());
+                        cmd.Parameters.AddWithValue("@LastName", txtLastName.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Email", txtEmailAddress.Text.Trim());
+                        cmd.Parameters.AddWithValue("@ParentEmail", txtParentEmailAddress.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
                         cmd.Connection = con;
                         con.Open();
                         userId = Convert.ToInt32(cmd.ExecuteScalar());
@@ -61,4 +62,4 @@ namespace ActiveVideoGame
             }
         }
     }
-    }
+}

@@ -20,12 +20,12 @@ namespace ActiveVideoGame
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["INFT3050Ass1"].ConnectionString);
             conn.Open();
-            string checkuser= "select count(*) from tbl_user where Str_PK_username = '"+ txtUsername.Text + "'";
+            string checkuser = "select count(*) from Users where Username = '" + txtUsername.Text + "'";
             SqlCommand com = new SqlCommand(checkuser, conn);
             int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
             if (temp == 1)
             {
-                string checkPasswordQuery = "select Str_password from tbl_user where Str_PK_username = '" + txtUsername.Text + "'";
+                string checkPasswordQuery = "select Password from Users where Username = '" + txtUsername.Text + "'";
                 SqlCommand PassCom = new SqlCommand(checkPasswordQuery, conn);
                 string password = PassCom.ExecuteScalar().ToString();
                 if (password.Equals(txtPassword.Text))
@@ -45,4 +45,4 @@ namespace ActiveVideoGame
             }
         }
     }
-    }
+}

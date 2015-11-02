@@ -11,5 +11,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="content_window">
         <h1>Fight Summary</h1>
+        <h2>Winner: </h2>
+        <h4>Experience Points Awarded: </h4>
+        <h3>Loser: </h3>
     </div>
 </asp:Content>

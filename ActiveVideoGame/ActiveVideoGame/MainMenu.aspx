@@ -28,6 +28,8 @@
                     <asp:HyperLink ID="exerciseManagement" runat="server" NavigateUrl="/ExerciseManagement.aspx">Exercise Management</asp:HyperLink></li>
                 <li>
                     <asp:HyperLink ID="hof" runat="server" NavigateUrl="/Hof.aspx">Hall of Fame</asp:HyperLink></li>
+                <li>
+                    <asp:Hyperlink ID="viewProfile" runat="server" NavigateUrl="/Profile.aspx">My Profile</asp:Hyperlink></li>
             </ul>
         </div>
         <%--RIGHT HAND SIDE CONTENT WINDOW--%>

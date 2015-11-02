@@ -10,7 +10,7 @@
 namespace ActiveVideoGame {
     
     
-    public partial class Register {
+    public partial class Profile {
         
         /// <summary>
         /// frmRegister control.
@@ -22,15 +22,6 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.HtmlControls.HtmlForm frmRegister;
         
         /// <summary>
-        /// rfvRegisterFirstName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterFirstName;
-        
-        /// <summary>
         /// txtFirstName control.
         /// </summary>
         /// <remarks>
@@ -38,15 +29,6 @@ namespace ActiveVideoGame {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
-        
-        /// <summary>
-        /// rfsRegisterSurname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfsRegisterSurname;
         
         /// <summary>
         /// txtLastName control.
@@ -58,15 +40,6 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
         
         /// <summary>
-        /// txtUsername control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUsername;
-        
-        /// <summary>
         /// revRegisterEmail control.
         /// </summary>
         /// <remarks>
@@ -74,15 +47,6 @@ namespace ActiveVideoGame {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revRegisterEmail;
-        
-        /// <summary>
-        /// rfvRegisterEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterEmail;
         
         /// <summary>
         /// txtEmailAddress control.
@@ -103,15 +67,6 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revRegisterParentEmail;
         
         /// <summary>
-        /// rfvRegisterParentEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterParentEmail;
-        
-        /// <summary>
         /// txtParentEmailAddress control.
         /// </summary>
         /// <remarks>
@@ -128,15 +83,6 @@ namespace ActiveVideoGame {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revRegisterPassword;
-        
-        /// <summary>
-        /// rfvRegisterPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterPassword;
         
         /// <summary>
         /// txtPassword control.
@@ -157,15 +103,6 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.CompareValidator cvRegisterConfirmPassword;
         
         /// <summary>
-        /// rfvRegisterConfirmPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRegisterConfirmPassword;
-        
-        /// <summary>
         /// txtConfirmPassword control.
         /// </summary>
         /// <remarks>
@@ -175,13 +112,13 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.TextBox txtConfirmPassword;
         
         /// <summary>
-        /// btnRegister control.
+        /// btnUpdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegister;
+        protected global::System.Web.UI.WebControls.Button btnUpdate;
         
         /// <summary>
         /// SqlDataSource1 control.
@@ -193,12 +130,12 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// vsRegister control.
+        /// vsUpdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary vsRegister;
+        protected global::System.Web.UI.WebControls.ValidationSummary vsUpdate;
     }
 }
