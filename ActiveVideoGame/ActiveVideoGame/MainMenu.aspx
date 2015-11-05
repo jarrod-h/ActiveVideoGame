@@ -29,42 +29,39 @@
                 <li>
                     <asp:HyperLink ID="hof" runat="server" NavigateUrl="/Hof.aspx">Hall of Fame</asp:HyperLink></li>
                 <li>
-                    <asp:Hyperlink ID="viewProfile" runat="server" NavigateUrl="/Profile.aspx">My Profile</asp:Hyperlink></li>
+                    <asp:HyperLink ID="viewProfile" runat="server" NavigateUrl="/Profile.aspx">My Profile</asp:HyperLink></li>
             </ul>
         </div>
         <%--RIGHT HAND SIDE CONTENT WINDOW--%>
         <%--This dynamic content window will display the users characters alongside their name, level and stats--%>
         <div id="content_window">
-            <div id="user_monsters">
-                <div class="image">
-                    <img src="Images/bowser.jpg" /></div>
-                <div class="stats">
-                    <p>Name: </p>
-                    <p>Level: </p>
-                    <p>Stats: </p>
+            <form id="user_monsters">
+                <div id="monsterList">
+                    <asp:LinkButton ID="Monster1" runat="server" OnClick="Monster1_Click">1</asp:LinkButton>
+                    <asp:LinkButton ID="Monster2" runat="server" OnClick="Monster2_Click">2</asp:LinkButton>
+                    <asp:LinkButton ID="Monster3" runat="server" OnClick="Monster3_Click">3</asp:LinkButton>
+                    <asp:LinkButton ID="Monster4" runat="server" OnClick="Monster4_Click">4</asp:LinkButton>
                 </div>
-                <div class="image">
-                    <img src="Images/bowser.jpg" /></div>
-                <div class="stats">
-                    <p>Name: </p>
-                    <p>Level: </p>
-                    <p>Stats: </p>
+                <div class="monsterItem" id="monsterItem1">
+                    <div class="image">
+                        <img src="Images/bowser.jpg" />
+                    </div>
+                    <div class="stats">
+                        <asp:Label ID="lblNumber" runat="server" Text="Label">Monster Number: </asp:Label>
+                        <asp:Label ID="lblMonsterNumber" runat="server" Text="Label"> of 4</asp:Label>
+                        <asp:Label ID="lblName" runat="server" Text="Label">Name: </asp:Label>
+                        <asp:Label ID="lblMonsterName" runat="server" Text="Label"></asp:Label>
+                        <asp:Image ID="imgMonsterImage" runat="server" ImageUrl="img/monsterImage_default.png"/>
+                        <asp:Label ID="lblElement" runat="server" Text="Label">Element: </asp:Label>
+                        <asp:Label ID="lblMonsterElement" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblLevel" runat="server" Text="Label">Level: </asp:Label>
+                        <asp:Label ID="lblMonsterLevel" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblStep" runat="server" Text="Label">Step: </asp:Label>
+                        <asp:Label ID="lblMonsterStep" runat="server" Text="Label"></asp:Label>
+                        
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="Images/bowser.jpg" /></div>
-                <div class="stats">
-                    <p>Name: </p>
-                    <p>Level: </p>
-                    <p>Stats: </p>
-                </div>
-                <div class="image">
-                    <img src="Images/bowser.jpg" /></div>
-                <div class="stats">
-                    <p>Name: </p>
-                    <p>Level: </p>
-                    <p>Stats: </p>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </asp:Content>

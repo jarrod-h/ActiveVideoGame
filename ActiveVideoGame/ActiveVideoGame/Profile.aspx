@@ -13,8 +13,8 @@
     <div id="content_window">
         <form id="frmRegister" runat="server">
             <div id="section">
-                <h1>Register</h1>
-                <p>Enter your details below to sign up for The BETTER Battle!</p>
+                <h1>Update Profile</h1>
+                <p>Update your details in the fields below.</p>
                 <div class="row">
                     First Name:
                     <asp:TextBox CssClass="txtInput" ID="txtFirstName" runat="server" placeholder="First Name">Alice</asp:TextBox>

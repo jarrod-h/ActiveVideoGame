@@ -8,7 +8,7 @@ div#content_window {
     min-width: 1100px;
     display:inline-block;
     margin-left:20px;
-    height:auto;
+    height:200%;
 }
 form {
     min-width: 1175px;
@@ -27,8 +27,9 @@ div#vs_text{
 }
 div#user_monsters, div#other_monsters{
     background-color:rgba(100, 100, 100, 1);
+    height:80%;
     min-height:150px;
-    max-height:400px;
+    max-height:600px;
     overflow-y:scroll;
     width: 500px;
 }

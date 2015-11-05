@@ -6,11 +6,15 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.SessionState;
 
 namespace ActiveVideoGame
 {
     public partial class Login : System.Web.UI.Page
     {
+        string loginUsername;
+        string loginPassword;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,19 +22,25 @@ namespace ActiveVideoGame
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+            loginUsername = txtUsername.Text;
+            loginPassword = txtPassword.Text;
+            AuthenticateLogin();
+        }
+
+        protected void AuthenticateLogin()
+        {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["INFT3050Ass1"].ConnectionString);
             conn.Open();
-            string checkuser = "select count(*) from Users where Username = '" + txtUsername.Text + "'";
-            SqlCommand com = new SqlCommand(checkuser, conn);
-            int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
-            if (temp == 1)
+            SqlCommand command = new SqlCommand("SELECT count(*) FROM Users WHERE Username = '" + loginUsername + "'", conn);
+            int flag = Convert.ToInt32(command.ExecuteScalar().ToString());
+            if (flag == 1)
             {
-                string checkPasswordQuery = "select Password from Users where Username = '" + txtUsername.Text + "'";
-                SqlCommand PassCom = new SqlCommand(checkPasswordQuery, conn);
-                string password = PassCom.ExecuteScalar().ToString();
-                if (password.Equals(txtPassword.Text))
+                SqlCommand PasswordCmd = new SqlCommand("SELECT Password FROM Users WHERE Username = '" + loginUsername + "'", conn);
+                string password = PasswordCmd.ExecuteScalar().ToString();
+                if (password.Equals(loginPassword))
                 {
-                    Session["New"] = txtUsername.Text;
+                    Session["Username"] = loginUsername;
+                    Master.setSignedIn(true);
                     Response.Write("Password is correct");
                     Response.Redirect("MainMenu.aspx");
                 }
@@ -43,6 +53,7 @@ namespace ActiveVideoGame
             {
                 Response.Write("Username is not correct");
             }
+            conn.Close();
         }
     }
 }

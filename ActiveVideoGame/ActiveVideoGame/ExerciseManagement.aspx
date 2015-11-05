@@ -3,6 +3,7 @@
     Description: This is the exercise management page which contains the point the user can allocate towards their characters.--%>
 
 <%@ Page Title="Manage Exercise" Language="C#" MasterPageFile="Master.Master" AutoEventWireup="true" CodeBehind="ExerciseManagement.aspx.cs" Inherits="ActiveVideoGame.ExerciseManagement" ClientIDMode="Inherit"%>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/exercisemanagement.css" />
 </asp:Content>
