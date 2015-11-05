@@ -12,11 +12,7 @@ body {
     background-color: rgba(80, 180, 255, 1);
 }
 
-div#MainMenu {
-    width: 100%;
-    display: block;
-    z-index:1;
-}
+
 
 div.navMenu {
     float: left;

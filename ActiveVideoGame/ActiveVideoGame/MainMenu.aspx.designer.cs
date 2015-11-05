@@ -13,13 +13,13 @@ namespace ActiveVideoGame {
     public partial class MainMenu {
         
         /// <summary>
-        /// characterSelection control.
+        /// user_monsters control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink characterSelection;
+        protected global::System.Web.UI.HtmlControls.HtmlForm user_monsters;
         
         /// <summary>
         /// characterManagement control.
@@ -121,6 +121,15 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.LinkButton Monster4;
         
         /// <summary>
+        /// imgMonsterImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgMonsterImage;
+        
+        /// <summary>
         /// lblNumber control.
         /// </summary>
         /// <remarks>
@@ -155,15 +164,6 @@ namespace ActiveVideoGame {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMonsterName;
-        
-        /// <summary>
-        /// imgMonsterImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgMonsterImage;
         
         /// <summary>
         /// lblElement control.

@@ -18,6 +18,7 @@ namespace ActiveVideoGame
         {
             Session["Username"]="";
             Session["sessionMonsterXp"] = "";
+            Session["challengingMonster"] = "";
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

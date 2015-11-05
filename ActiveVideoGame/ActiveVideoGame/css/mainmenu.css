@@ -8,14 +8,12 @@ div.MainMenuScreen {
     height: 100%;
 }
 div#MainMenu {
-    position: absolute;
-    top:50px;
-    left:0;
-    width:12em;
-    display:block;
-    height: 90%;
+    display:inline-table;
+    height: 30px;
+    width:100%;
     background-color: rgba(0,0,0,1);
-    padding-left:10px;
+    padding:0px 10px 10px 0px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 div#content_window {
@@ -28,6 +26,26 @@ div#content_window {
     /*padding is made larger from the default within main.css to better fill the screen space*/
     padding: 55px 55px 55px 55px;
 }
+
+div#MainMenu>a {
+    background-color: rgba(80, 180, 255, 1);
+    border-radius:10px;
+    color:white;
+    font-weight:600;
+    vertical-align:text-bottom;
+    padding:5px;
+    padding-left:10px;
+    display:inline-flex;
+    width:150px;
+    height:40px;
+    align-items:center;
+    margin:10px 0px 0px 10px;
+}
+
+div#MainMenu>a:hover {
+    background-color: rgba(120, 200, 255, 1);
+}
+
 
 ul {
     color:white;
@@ -61,22 +79,19 @@ li a:hover{
 div.monsterItem {
     display: flex;
     position:relative;
-    top:-5px;
     border: 5px solid rgba(100, 100, 100, 1);
     z-index:1;
 }
 
 div.monsterItem:hover {
-    border: 5px solid yellow;
-    cursor: pointer;
 }
 
 div.image{
     float:left;
     display:inline-block;
-    height:180px;
+    height:150px;
     width: 20%;
-    padding: 0px 10px 0px 10px;
+    padding: 5px 10px 5px 10px;
     background-color:rgb(250, 208, 28);
     margin:5px 5px 5px 5px;
 }
@@ -91,11 +106,9 @@ img{
 div.stats{
     float:right;
     display:inline-block;
-    height:180px;
-    width: 70%;
-    margin-left: 5px;
-    margin-right:5px;
-    padding: 0px 10px 0px 10px;
+    height:150px;
+    width: 80%;
+    padding: 5px 10px 5px 10px;
     background-color:rgb(250, 208, 28);
     margin:5px 5px 5px 0px;
 }
