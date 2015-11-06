@@ -49,15 +49,6 @@ namespace ActiveVideoGame {
         protected global::System.Web.UI.WebControls.HyperLink exerciseUpload;
         
         /// <summary>
-        /// exerciseManagement control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink exerciseManagement;
-        
-        /// <summary>
         /// hof control.
         /// </summary>
         /// <remarks>
