@@ -13,7 +13,7 @@ namespace ActiveVideoGame
     public partial class MainMenu : System.Web.UI.Page
     {
         private string monster1Name, monster2Name, monster3Name, monster4Name, monster1Element, monster2Element, monster3Element, monster4Element;
-        private int monster1Xp, monster2Xp, monster3Xp, monster4Xp, monster1Id, monster2Id, monster3Id, monster4Id, selectedMonster, userLevel, userStep;
+        private int monster1Xp, monster2Xp, monster3Xp, monster4Xp, monster1Id, monster2Id, monster3Id, monster4Id, userLevel, userStep;
         private int monsterNum = 1;
         private DataSet userMonsters = new DataSet();
 
@@ -345,32 +345,32 @@ namespace ActiveVideoGame
         {
             monsterNum = 1;
             updateInterface();
-            Session["sessionMonsterXp"] = Convert.ToInt32(monster1Xp);
-            Session["challengingMonster"] = monster1Id;
+            Session["userMonsterXp"] = Convert.ToInt32(monster1Xp);
+            Session["userMonsterId"] = monster1Id;
         }
 
         protected void Monster2_Click(object sender, EventArgs e)
         {
             monsterNum = 2;
             updateInterface();
-            Session["sessionMonsterXp"] = Convert.ToInt32(monster2Xp);
-            Session["challengingMonster"] = monster2Id;
+            Session["userMonsterXp"] = Convert.ToInt32(monster2Xp);
+            Session["userMonsterId"] = monster2Id;
         }
 
         protected void Monster3_Click(object sender, EventArgs e)
         {
             monsterNum = 3;
             updateInterface();
-            Session["sessionMonsterXp"] = Convert.ToInt32(monster3Xp);
-            Session["challengingMonster"] = monster3Id;
+            Session["userMonsterXp"] = Convert.ToInt32(monster3Xp);
+            Session["userMonsterId"] = monster3Id;
         }
 
         protected void Monster4_Click(object sender, EventArgs e)
         {
             monsterNum = 4;
             updateInterface();
-            Session["sessionMonsterXp"] = Convert.ToInt32(monster4Xp);
-            Session["challengingMonster"] = monster4Id;
+            Session["userMonsterXp"] = Convert.ToInt32(monster4Xp);
+            Session["userMonsterId"] = monster4Id;
         }
 
 

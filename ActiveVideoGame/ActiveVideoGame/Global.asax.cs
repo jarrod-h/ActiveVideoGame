@@ -17,8 +17,13 @@ namespace ActiveVideoGame
         protected void Session_Start(object sender, EventArgs e)
         {
             Session["Username"]="";
-            Session["sessionMonsterXp"] = "";
-            Session["challengingMonster"] = "";
+            Session["userId"]="";
+            Session["userMonsterXp"] = "";
+            Session["userMonsterName"] = "";
+            Session["userMonsterId"] = "";
+            Session["opponentMonsterName"] = "";
+            Session["opponentMonsterId"]="";
+            Session["opponentMonsterXp"] = "";
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

@@ -13,23 +13,23 @@
     <div class="MainMenuScreen">
         <%--LEFT HAND SIDE NAVIGATIONAL MENU--%>
         <div id="MainMenu">
-                    <asp:HyperLink ID="characterManagement" runat="server" NavigateUrl="/CharacterManagement.aspx">Character Management</asp:HyperLink>
-                    <span>| </span>
-                    <asp:HyperLink ID="challengePage" runat="server" NavigateUrl="/ChallengePage.aspx">Challenge</asp:HyperLink>
-                    <span>| </span>
-                    <asp:HyperLink ID="fightSummary" runat="server" NavigateUrl="/FightSummary.aspx">Battle History</asp:HyperLink>
-                    <span>| </span>
-                    <asp:HyperLink ID="exerciseUpload" runat="server" NavigateUrl="/ExerciseUpload.aspx">Exercise Upload</asp:HyperLink>
-                    <span>| </span>
-                    <asp:HyperLink ID="exerciseManagement" runat="server" NavigateUrl="/ExerciseManagement.aspx">Exercise Management</asp:HyperLink>
-                    <span>| </span>
-                    <asp:HyperLink ID="hof" runat="server" NavigateUrl="/Hof.aspx">Hall of Fame</asp:HyperLink>
-                    <span>| </span>
-                    <asp:HyperLink ID="viewProfile" runat="server" NavigateUrl="/Profile.aspx">My Profile</asp:HyperLink>
-                </div>
+            <asp:HyperLink ID="characterManagement" runat="server" NavigateUrl="/CharacterManagement.aspx">Character Management</asp:HyperLink>
+
+            <asp:HyperLink ID="challengePage" runat="server" NavigateUrl="/ChallengePage.aspx">Challenge</asp:HyperLink>
+
+            <asp:HyperLink ID="fightSummary" runat="server" NavigateUrl="/FightSummary.aspx">Battle History</asp:HyperLink>
+
+            <asp:HyperLink ID="exerciseUpload" runat="server" NavigateUrl="/ExerciseUpload.aspx">Exercise Upload</asp:HyperLink>
+
+            <asp:HyperLink ID="exerciseManagement" runat="server" NavigateUrl="/ExerciseManagement.aspx">Exercise Management</asp:HyperLink>
+
+            <asp:HyperLink ID="hof" runat="server" NavigateUrl="/Hof.aspx">Hall of Fame</asp:HyperLink>
+
+            <asp:HyperLink ID="viewProfile" runat="server" NavigateUrl="/Profile.aspx">My Profile</asp:HyperLink>
+        </div>
         <div id="content_window">
             <form id="user_monsters" runat="server">
-                
+
                 <%--RIGHT HAND SIDE CONTENT WINDOW--%>
                 <%--This dynamic content window will display the users characters alongside their name, level and stats--%>
 
