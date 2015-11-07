@@ -5,12 +5,12 @@ using System.Web;
 using ActiveVideoGame.DAL;
 using System.Data;
 
-namespace ActiveVideoGame.BLL
+namespace ActiveVideoGame
 {
 
     public class User
     {
-        private UserDAL RegisterDAL;
+        
         string _username, _firstName, _lastName, _email, _parentEmail, _password;
         bool _nameIsPublic, _accountEnabled;
         int _userId, _unallocatedPoints;
@@ -24,8 +24,28 @@ namespace ActiveVideoGame.BLL
         //constructor
         public User(string Username, string FirstName, string LastName, string Email, string ParentEmail, string Password)
         {
+            UserDAL RegisterDAL;
             RegisterDAL = new UserDAL(Username, FirstName, LastName, Email, ParentEmail, Password);
             //--RegisterDAL.StatusMessage
+        }
+
+        public int userLogin(string Username, string Password)
+        {
+            int status = 0;
+            UserDAL LoginDAL = new UserDAL();
+            status = LoginDAL.FindUser(Username, Password);
+            if (status > 0)//user found
+            {
+                DataTable userProperties = LoginDAL.selectUser(Username);
+                this.UserId = Convert.ToInt32(userProperties.Rows[0][0]);
+                this.Username = Username;
+                this.FirstName = Convert.ToString(userProperties.Rows[0][1]);
+                this.LastName = Convert.ToString(userProperties.Rows[0][2]);
+                this.Email = Convert.ToString(userProperties.Rows[0][3]);
+                this.ParentEmail = Convert.ToString(userProperties.Rows[0][4]);
+                this.Password = Convert.ToString(userProperties.Rows[0][5]);
+            }
+            return status;
         }
 
         //UserId

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.SessionState;
+using ActiveVideoGame;
 
 namespace ActiveVideoGame
 {
@@ -14,6 +14,7 @@ namespace ActiveVideoGame
     {
         string loginUsername;
         string loginPassword;
+        private User player = new User();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -29,34 +30,13 @@ namespace ActiveVideoGame
 
         protected void AuthenticateLogin()
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["INFT3050Ass1"].ConnectionString);
-            conn.Open();
-            SqlCommand command = new SqlCommand("SELECT count(*) FROM Users WHERE Username = '" + loginUsername + "'", conn);
-            int flag = Convert.ToInt32(command.ExecuteScalar().ToString());
-            if (flag == 1)
+            if (player.userLogin(loginUsername, loginPassword) > 0)
             {
-                SqlCommand PasswordCmd = new SqlCommand("SELECT Password FROM Users WHERE Username = '" + loginUsername + "'", conn);
-                string password = PasswordCmd.ExecuteScalar().ToString();
-                if (password.Equals(loginPassword))
-                {
-                    SqlCommand UserIdCmd = new SqlCommand("SELECT UserId FROM Users Where Username = '" + loginUsername + "'", conn);
-                    string UserId = UserIdCmd.ExecuteScalar().ToString();
-                    Session["UserId"] = UserId;
-                    Session["Username"] = loginUsername;
-                    Master.setSignedIn(true);
-                    Response.Write("Password is correct");
-                    Response.Redirect("MainMenu.aspx");
-                }
-                else
-                {
-                    Response.Write("Password is not correct");
-                }
+                Master.setSignedIn(true);
+                Session["UserID"] = player.UserId;
+                Session["Username"] = player.Username;
+                Response.Redirect("MainMenu.aspx");
             }
-            else
-            {
-                Response.Write("Username is not correct");
-            }
-            conn.Close();
         }
     }
 }

@@ -66,6 +66,83 @@ namespace ActiveVideoGame.DAL
             }
         }
 
+        public int FindUser(string username, string password)
+        {
+            int status = 0;
+            using (SqlConnection con = new SqlConnection(constr))
+            {
+                using (SqlCommand cmd = new SqlCommand("user_login"))
+                {
+                    using (SqlDataAdapter sda = new SqlDataAdapter())
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@Username", username);
+                        cmd.Parameters.AddWithValue("@Password", password);
+                        cmd.Connection = con;
+                        try
+                        {
+                            con.Open();
+                            status = Convert.ToInt32(cmd.ExecuteScalar());
+                            System.Diagnostics.Debug.WriteLine("FindUser() status: " + status);
+                        }
+                        catch (Exception ex)
+                        {
+                            throw ex;
+                        }
+                        finally
+                        {
+                            con.Close();
+                        }
+                    }
+                }
+            }
+            if (status > 0)
+            {
+                System.Diagnostics.Debug.WriteLine("Login success.");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("Attempt to verify user login failed. Reason: " + Convert.ToString(status));
+                if (status == -1)
+                {
+                    System.Diagnostics.Debug.Write("Username Incorrect");
+                }
+                else if (status == -2)
+                {
+                    System.Diagnostics.Debug.Write("Password Incorrect");
+                }
+            }
+            return status;
+        }
+
+        public DataTable selectUser(string Username)
+        {
+            SqlConnection con = new SqlConnection(constr);
+            SqlCommand com = new SqlCommand("select_user");
+            SqlDataAdapter adp = new SqlDataAdapter(com);
+            DataTable userData = new DataTable();
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@Username", Username);
+            com.Connection = con;
+            try
+            {
+                con.Open();
+                System.Diagnostics.Debug.Write("HERE 1");
+                adp.Fill(userData);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                System.Diagnostics.Debug.Write("HERE 2");
+                con.Close();
+            }
+            System.Diagnostics.Debug.Write("HERE 3: "+userData.ToString());
+            return userData;
+        }
+
         //GETTERS AND SETTERS
         //UserId -- when a user logs in, this function will return the userId
         public int UserId
