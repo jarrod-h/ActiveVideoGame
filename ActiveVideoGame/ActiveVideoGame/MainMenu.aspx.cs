@@ -19,27 +19,27 @@ namespace ActiveVideoGame
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("Session: "+Convert.ToString(Session["Username"]));//DEBUG
+            System.Diagnostics.Debug.WriteLine("Session: "+Convert.ToString(Session["UserId"]));//DEBUG
             //If the user is not logged in, the Session object "Username" will not have been set to anything
             //The user is therefore redirected back to the login page
-            if (Convert.ToString(Session["Username"]).Equals(""))
+            if (Convert.ToInt32(Session["UserId"]) < 1)
             {
                 Response.Redirect("Login.aspx");
             }
             else
             {
-                getUserMonsters(Convert.ToString(Session["Username"]));
+                getUserMonsters(Convert.ToInt32(Session["UserId"]));
                 setMonsterValues();
                 updateInterface();
             }
         }
 
-        private void getUserMonsters(string username)
+        private void getUserMonsters(int UserId)
         {
             //Retrieve from the database monster for the username
 
             SqlConnection SelectConn = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["INFT3050Ass1"].ConnectionString);
-            string select = "SELECT [Monsters].[MonsterId], [Monsters].[MonsterName], [Monsters].[Username], [Elements].[ElementType], [Monsters].[ExperiencePoints] FROM [INFT3050Ass1].[dbo].[Monsters] INNER JOIN [INFT3050Ass1].[dbo].[Elements] ON [Monsters].[ElementId] = [Elements].[ElementId] WHERE [Monsters].[Retired] = 0 AND [Monsters].[Username] = '" + Convert.ToString(Session["Username"]) + "'";
+            string select = "SELECT [Monsters].[MonsterId], [Monsters].[MonsterName], [Monsters].[UserId], [Elements].[ElementType], [Monsters].[ExperiencePoints] FROM [INFT3050Ass1].[dbo].[Monsters] INNER JOIN [INFT3050Ass1].[dbo].[Elements] ON [Monsters].[ElementId] = [Elements].[ElementId] WHERE [Monsters].[InHof] = 0 AND [Monsters].[UserId] = '" + Convert.ToInt32(Session["UserId"]) + "'";
             SqlDataAdapter monstersAccess = new SqlDataAdapter(select, SelectConn);
             monstersAccess.Fill(userMonsters, "Monsters");
         }

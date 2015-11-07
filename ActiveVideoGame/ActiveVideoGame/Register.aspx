@@ -16,6 +16,11 @@
                 <p>Enter your details below to sign up for The BETTER Battle!</p>
 
                 <%--INPUT FIELDS GO BELOW WITH VALIDATORS--%>
+                
+                <div class="row">
+                    User Name:
+                    <asp:TextBox CssClass="txtInput" ID="txtUsername" runat="server" placeholder="Username">Roxy42</asp:TextBox>
+                </div>
                 <div class="row">
                     First Name:
                     <asp:RequiredFieldValidator ID="rfvRegisterFirstName" runat="server" ControlToValidate="txtFirstName" ErrorMessage="Please enter your first name." ForeColor="Red">*</asp:RequiredFieldValidator>
@@ -25,10 +30,6 @@
                     Last Name:
                     <asp:RequiredFieldValidator ID="rfsRegisterSurname" runat="server" ControlToValidate="txtLastName" ErrorMessage="Please enter your Surname." ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:TextBox CssClass="txtInput" ID="txtLastName" runat="server" placeholder="Surname">Citizen</asp:TextBox>
-                </div>
-                <div class="row">
-                    User Name:
-                    <asp:TextBox CssClass="txtInput" ID="txtUsername" runat="server" placeholder="Username">Roxy42</asp:TextBox>
                 </div>
                 <div class="row">
                     Email:

@@ -14,7 +14,7 @@ namespace ActiveVideoGame
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Convert.ToString(Session["Username"]).Equals(""))
+            if (!Convert.ToString(Session["UserId"]).Equals("0"))
             {
                 lbl_username.Visible = true;
                 lbl_username.Text = "Welcome " + Convert.ToString(Session["Username"] + "!");

@@ -21,8 +21,6 @@
 
             <asp:HyperLink ID="exerciseUpload" runat="server" NavigateUrl="/ExerciseUpload.aspx">Exercise Upload</asp:HyperLink>
 
-            <asp:HyperLink ID="exerciseManagement" runat="server" NavigateUrl="/ExerciseManagement.aspx">Exercise Management</asp:HyperLink>
-
             <asp:HyperLink ID="hof" runat="server" NavigateUrl="/Hof.aspx">Hall of Fame</asp:HyperLink>
 
             <asp:HyperLink ID="viewProfile" runat="server" NavigateUrl="/Profile.aspx">My Profile</asp:HyperLink>

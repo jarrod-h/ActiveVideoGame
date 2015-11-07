@@ -17,7 +17,7 @@ namespace ActiveVideoGame
         protected void Session_Start(object sender, EventArgs e)
         {
             Session["Username"]="";
-            Session["userId"]="";
+            Session["userId"]="0";
             Session["userMonsterXp"] = "";
             Session["userMonsterName"] = "";
             Session["userMonsterId"] = "";

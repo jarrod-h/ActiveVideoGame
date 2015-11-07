@@ -39,6 +39,9 @@ namespace ActiveVideoGame
                 string password = PasswordCmd.ExecuteScalar().ToString();
                 if (password.Equals(loginPassword))
                 {
+                    SqlCommand UserIdCmd = new SqlCommand("SELECT UserId FROM Users Where Username = '" + loginUsername + "'", conn);
+                    string UserId = UserIdCmd.ExecuteScalar().ToString();
+                    Session["UserId"] = UserId;
                     Session["Username"] = loginUsername;
                     Master.setSignedIn(true);
                     Response.Write("Password is correct");
