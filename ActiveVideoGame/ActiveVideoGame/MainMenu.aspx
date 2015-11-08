@@ -31,7 +31,7 @@
                 <%--RIGHT HAND SIDE CONTENT WINDOW--%>
                 <%--This dynamic content window will display the users characters alongside their name, level and stats--%>
 
-                <div id="monsterNumbers">
+                <%--<div id="monsterNumbers">
                     <asp:LinkButton ID="Monster1" runat="server" OnClick="Monster1_Click">1</asp:LinkButton>
                     <asp:LinkButton ID="Monster2" runat="server" OnClick="Monster2_Click">2</asp:LinkButton>
                     <asp:LinkButton ID="Monster3" runat="server" OnClick="Monster3_Click">3</asp:LinkButton>
@@ -39,8 +39,23 @@
                 </div>
                 <div>
                     <p>Selected monster: </p>
-                </div>
-                <div class="monsterItem" id="monsterItem1">
+                </div>--%>
+                    <asp:GridView ID="monstersGrid1" runat="server" AutoGenerateColumns="false" DataKeyNames="monsterId" OnDataBound="monstersGrid_DataBound">
+                        <Columns>
+                            <asp:ImageField></asp:ImageField>
+                            <asp:BoundField HeaderText="Monster Name: " DataField="MonsterId" NullDisplayText="??" ReadOnly="True"></asp:BoundField>
+                            <asp:BoundField HeaderText="Element Id:" DataField="ElementId" NullDisplayText="??"></asp:BoundField>
+                            <asp:BoundField HeaderText="Level/Step: " NullDisplayText="??"></asp:BoundField>
+                            <asp:BoundField HeaderText="Experience Points: " DataField="ExperiencePoints" NullDisplayText="??"></asp:BoundField>
+                            <asp:BoundField HeaderText="In Hof: " DataField="InHof" NullDisplayText="??"></asp:BoundField>
+                            <asp:ButtonField Text="Edit"></asp:ButtonField>
+                            <asp:ButtonField Text="Delete"></asp:ButtonField>
+                        </Columns>
+                        <columns>
+
+                        </columns>
+                    </asp:GridView>
+                <%--<div class="monsterItem" id="monsterItem1">
                     <div class="image">
                         <asp:Image ID="imgMonsterImage" runat="server" />
                     </div>
@@ -56,7 +71,7 @@
                         <asp:Label ID="lblStep" runat="server" Text="">Step: </asp:Label>
                         <asp:Label ID="lblMonsterStep" runat="server" Text=""></asp:Label><br />
                     </div>
-                </div>
+                </div>--%>
             </form>
         </div>
     </div>

@@ -131,16 +131,16 @@ namespace ActiveVideoGame.DAL
             set { _monsterName = value; }
         }
         //UserId
-        public int MonsterId
+        public int UserId
         {
-            get { return _monsterId; }
-            set { _monsterId = value; }
+            get { return _userId; }
+            set { _userId = value; }
         }
         //Username
-        public int MonsterId
+        public string Username
         {
-            get { return _monsterId; }
-            set { _monsterId = value; }
+            get { return _username; }
+            set { _username = value; }
         }
         //ElementId
         public int ElementId
