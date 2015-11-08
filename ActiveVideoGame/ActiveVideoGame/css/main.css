@@ -1,0 +1,48 @@
+﻿/************************************
+    Jarrod HILES
+    CSS for the Main Menu (MainMenu.aspx)
+
+************************************/
+li {
+    list-style-type:none;
+    padding: 2px 0px 2px 4px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    background-color: lightblue;
+}
+
+
+
+div#MainMenu {
+    width: 100%;
+    display:block;
+}
+
+div.navMenu{
+    float:left;
+    width:150px;
+    /*height:;*/
+    background-color:lightgrey;
+}
+
+ul {
+    padding:0 0 0 0;
+}
+
+div.charDisplay{
+    float: right;
+}
+
+body {
+}
+
+Content {
+    color: black;
+}
+
+footer {
+    width: 100%;
+}

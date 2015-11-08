@@ -58,7 +58,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="Login.aspx" />
+=======
+    <Content Include="ChallengePage.aspx" />
+    <Content Include="CharacterManagement.aspx" />
+    <Content Include="CharacterSelection.aspx" />
+    <Content Include="css\main.css" />
+    <Content Include="ExerciseManagement.aspx" />
+    <Content Include="ExerciseUpload.aspx" />
+    <Content Include="FightOutcome.aspx" />
+    <Content Include="FightPage.aspx" />
+    <Content Include="FightSummary.aspx" />
+    <Content Include="Hof.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="MainMenu.aspx" />
+>>>>>>> refs/remotes/origin/master
     <Content Include="Master.Master" />
     <Content Include="Register.aspx" />
     <Content Include="Welcome.aspx" />
@@ -74,9 +90,75 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChallengePage.aspx.cs">
+      <DependentUpon>ChallengePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChallengePage.aspx.designer.cs">
+      <DependentUpon>ChallengePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterManagement.aspx.cs">
+      <DependentUpon>CharacterManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CharacterManagement.aspx.designer.cs">
+      <DependentUpon>CharacterManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterSelection.aspx.cs">
+      <DependentUpon>CharacterSelection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CharacterSelection.aspx.designer.cs">
+      <DependentUpon>CharacterSelection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseManagement.aspx.cs">
+      <DependentUpon>ExerciseManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseManagement.aspx.designer.cs">
+      <DependentUpon>ExerciseManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseUpload.aspx.cs">
+      <DependentUpon>ExerciseUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExerciseUpload.aspx.designer.cs">
+      <DependentUpon>ExerciseUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FightOutcome.aspx.cs">
+      <DependentUpon>FightOutcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FightOutcome.aspx.designer.cs">
+      <DependentUpon>FightOutcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FightPage.aspx.cs">
+      <DependentUpon>FightPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FightPage.aspx.designer.cs">
+      <DependentUpon>FightPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FightSummary.aspx.cs">
+      <DependentUpon>FightSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FightSummary.aspx.designer.cs">
+      <DependentUpon>FightSummary.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Hof.aspx.cs">
+      <DependentUpon>Hof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hof.aspx.designer.cs">
+      <DependentUpon>Hof.aspx</DependentUpon>
+    </Compile>
+>>>>>>> refs/remotes/origin/master
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -84,8 +166,26 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
+>>>>>>> refs/remotes/origin/master
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
