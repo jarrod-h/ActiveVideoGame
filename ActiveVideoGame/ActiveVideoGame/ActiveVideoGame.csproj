@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.1.4\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -60,19 +63,45 @@
     <Content Include="ChallengePage.aspx" />
     <Content Include="CharacterManagement.aspx" />
     <Content Include="CharacterSelection.aspx" />
+    <Content Include="CreateCharacter.aspx" />
+    <Content Include="css\challengepage.css" />
+    <Content Include="css\charactermanagement.css" />
+    <Content Include="css\characterselection.css" />
+    <Content Include="css\exercisemanagement.css" />
+    <Content Include="css\exerciseupload.css" />
+    <Content Include="css\fight.css" />
+    <Content Include="css\fightoutcome.css" />
+    <Content Include="css\fightsummary.css" />
+    <Content Include="css\hof.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\logout.css" />
     <Content Include="css\main.css" />
-    <Content Include="ExerciseManagement.aspx" />
+    <Content Include="css\mainmenu.css" />
+    <Content Include="css\profile.css" />
+    <Content Include="css\register.css" />
+    <Content Include="css\welcome.css" />
     <Content Include="ExerciseUpload.aspx" />
     <Content Include="FightOutcome.aspx" />
     <Content Include="FightPage.aspx" />
     <Content Include="FightSummary.aspx" />
     <Content Include="Hof.aspx" />
+    <Content Include="Images\elementImageAir.png" />
+    <Content Include="Images\elementImageDefault.png" />
+    <Content Include="Images\elementImageEarth.png" />
+    <Content Include="Images\elementImageFire.png" />
+    <Content Include="Images\elementImageWater.png" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="MainMenu.aspx" />
     <Content Include="Master.Master" />
+    <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Welcome.aspx" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -85,6 +114,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\User.cs" />
     <Compile Include="ChallengePage.aspx.cs">
       <DependentUpon>ChallengePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -106,13 +136,16 @@
     <Compile Include="CharacterSelection.aspx.designer.cs">
       <DependentUpon>CharacterSelection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExerciseManagement.aspx.cs">
-      <DependentUpon>ExerciseManagement.aspx</DependentUpon>
+    <Compile Include="CreateCharacter.aspx.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExerciseManagement.aspx.designer.cs">
-      <DependentUpon>ExerciseManagement.aspx</DependentUpon>
+    <Compile Include="CreateCharacter.aspx.designer.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\ChallengeDAL.cs" />
+    <Compile Include="DAL\MonsterDAL.cs" />
+    <Compile Include="DAL\UserDAL.cs" />
     <Compile Include="ExerciseUpload.aspx.cs">
       <DependentUpon>ExerciseUpload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -179,6 +212,13 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -197,7 +237,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,16 @@
+﻿/************************************
+    Jarrod HILES
+    CSS for the Login Page (Login.aspx)
+
+************************************/
+#content_window {
+    padding: 20px 20px 20px 20px;
+}
+
+.welcome_content>h2{
+    margin-bottom:0px;
+}
+
+.welcome_content>p{
+    margin-top:0px;
+}

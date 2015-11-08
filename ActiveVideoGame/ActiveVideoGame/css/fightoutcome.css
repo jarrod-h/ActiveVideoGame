@@ -1,0 +1,22 @@
+﻿/************************************
+    Jarrod HILES
+    CSS for the Fight Outcome Page (FightOutcome.aspx)
+
+************************************/
+
+body {
+}
+
+a {
+    text-decoration:none;
+}
+a:visited {
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
