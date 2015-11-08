@@ -127,7 +127,7 @@ namespace ActiveVideoGame.DAL
             try
             {
                 con.Open();
-                System.Diagnostics.Debug.Write("HERE 1");
+                //System.Diagnostics.Debug.Write("HERE 1");//DEBUG
                 adp.Fill(userData);
             }
             catch(Exception ex)

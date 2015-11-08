@@ -36,8 +36,8 @@ namespace ActiveVideoGame
 
         private void getUserMonsters(int UserId)
         {
-            //Retrieve from the database monster for the username
-
+            //Retrieve monsters from the database by userId [Monster class]>[MonsterDAL class]>ReturnMonsters(UserId);
+            
             SqlConnection SelectConn = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["INFT3050Ass1"].ConnectionString);
             string select = "SELECT [Monsters].[MonsterId], [Monsters].[MonsterName], [Monsters].[UserId], [Elements].[ElementType], [Monsters].[ExperiencePoints] FROM [INFT3050Ass1].[dbo].[Monsters] INNER JOIN [INFT3050Ass1].[dbo].[Elements] ON [Monsters].[ElementId] = [Elements].[ElementId] WHERE [Monsters].[InHof] = 0 AND [Monsters].[UserId] = '" + Convert.ToInt32(Session["UserId"]) + "'";
             SqlDataAdapter monstersAccess = new SqlDataAdapter(select, SelectConn);

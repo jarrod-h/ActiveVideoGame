@@ -135,6 +135,8 @@
     <Compile Include="CharacterSelection.aspx.designer.cs">
       <DependentUpon>CharacterSelection.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\ChallengeDAL.cs" />
+    <Compile Include="DAL\MonsterDAL.cs" />
     <Compile Include="DAL\UserDAL.cs" />
     <Compile Include="ExerciseUpload.aspx.cs">
       <DependentUpon>ExerciseUpload.aspx</DependentUpon>
