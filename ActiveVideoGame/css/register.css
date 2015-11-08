@@ -1,0 +1,60 @@
+﻿/************************************
+    Jarrod HILES
+    CSS for the Registration Page (register.aspx)
+
+************************************/
+
+div.section {
+    margin-bottom: 30px;
+}
+
+    div.row, div.section > div {
+        margin-bottom: 2px;
+    }
+
+#frmRegister {
+    padding-left: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+input#MainContent_txtFirstName {
+}
+
+input#MainContent_txtLastName {
+}
+
+input#MainContent_txtEmailAddress {
+}
+
+input#MainContent_txtPassword {
+}
+
+input#MainContent_txtConfirmPassword {
+}
+
+input.txtInput {
+    max-width:250px;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+    display:block;
+    font-size:1em;
+}
+
+input#MainContent_btnRegister {
+    margin-top:10px;
+    display:block;
+    font-weight:bold;
+    background-color:rgba(255,0,0,1);
+    color:rgba(255,255,255,1);
+    height:2.2em;
+    min-width: 6em;
+    padding:3px 12px 5px;
+    border: 0;
+}
+input#MainContent_btnRegister:hover {
+    background-color:rgba(255,25,25,0.8);
+    cursor:pointer;
+}

@@ -1,0 +1,35 @@
+﻿/************************************
+    Jarrod HILES
+    CSS for the Character Selection Page (CharacterSelection.aspx)
+
+************************************/
+body {
+}
+
+div#selection {
+    margin: 20px auto 20px auto;
+}
+
+select {
+    margin: 10px auto 5px auto;
+}
+
+img {
+    margin: 0px auto 0px auto;
+}
+
+input#MainContent_btnChooseChar {
+    display:block;
+    font-weight:bold;
+    margin: 0px auto 0px auto;
+    background-color:rgba(255,0,0,1);
+    color:rgba(255,255,255,1);
+    height:2.2em;
+    min-width: 6em;
+    padding:3px 12px 5px;
+    border: 0;
+}
+input#MainContent_btnChooseChar:hover {
+    background-color:rgba(255,25,25,0.8);
+    cursor:pointer;
+}
