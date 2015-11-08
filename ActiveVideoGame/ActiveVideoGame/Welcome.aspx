@@ -5,7 +5,6 @@
 
 <%@ Page Title="Welcome" Language="C#" AutoEventWireup="true" CodeBehind="Welcome.aspx.cs" Inherits="ActiveVideoGame.WebForm1" MasterPageFile="Master.Master" ClientIDMode="Inherit" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/welcome.css" />
 </asp:Content>

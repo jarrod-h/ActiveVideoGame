@@ -24,12 +24,9 @@
                     <div id="logo">BETTER</div>
                 </a>
                 <%--ASP CONTENT PLACEHOLDER TO GO HERE, "Welcome [NAME] will be displayed alongside the users points balance--%>
-                <a href="Login.aspx">
-                    <div id="lnk_signIn">Sign In</div>
-                </a>
-                <a href="Register.aspx">
-                    <div id="lnk_register">Sign Up</div>
-                </a>
+                <asp:Label ID="lbl_username" Text="Welcome " runat="server" Visible="False"></asp:Label>
+                <asp:HyperLink ID="lnk_signIn" NavigateUrl="Login.aspx" Text="Sign In" runat="server"></asp:HyperLink>
+                <asp:HyperLink ID="lnk_register" NavigateUrl="Register.aspx" Text="Register" runat="server"></asp:HyperLink>
             </div>
         </nav>
             <div id="content-styling">

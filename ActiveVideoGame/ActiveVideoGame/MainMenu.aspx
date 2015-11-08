@@ -13,58 +13,51 @@
     <div class="MainMenuScreen">
         <%--LEFT HAND SIDE NAVIGATIONAL MENU--%>
         <div id="MainMenu">
-            <ul>
-                <li>
-                    <asp:HyperLink ID="characterSelection" runat="server" NavigateUrl="/CharacterSelection.aspx">Character Selection</asp:HyperLink></li>
-                <li>
-                    <asp:HyperLink ID="characterManagement" runat="server" NavigateUrl="/CharacterManagement.aspx">Character Management</asp:HyperLink></li>
-                <li>
-                    <asp:HyperLink ID="challengePage" runat="server" NavigateUrl="/ChallengePage.aspx">Challenge</asp:HyperLink></li>
-                <li>
-                    <asp:HyperLink ID="fightSummary" runat="server" NavigateUrl="/FightSummary.aspx">Fight Summary</asp:HyperLink></li>
-                <li>
-                    <asp:HyperLink ID="exerciseUpload" runat="server" NavigateUrl="/ExerciseUpload.aspx">Exercise Upload</asp:HyperLink></li>
-                <li>
-                    <asp:HyperLink ID="exerciseManagement" runat="server" NavigateUrl="/ExerciseManagement.aspx">Exercise Management</asp:HyperLink></li>
-                <li>
-                    <asp:HyperLink ID="hof" runat="server" NavigateUrl="/Hof.aspx">Hall of Fame</asp:HyperLink></li>
-                <li>
-                    <asp:Hyperlink ID="viewProfile" runat="server" NavigateUrl="/Profile.aspx">My Profile</asp:Hyperlink></li>
-            </ul>
+            <asp:HyperLink ID="characterManagement" runat="server" NavigateUrl="/CharacterManagement.aspx">Character Management</asp:HyperLink>
+
+            <asp:HyperLink ID="challengePage" runat="server" NavigateUrl="/ChallengePage.aspx">Challenge</asp:HyperLink>
+
+            <asp:HyperLink ID="fightSummary" runat="server" NavigateUrl="/FightSummary.aspx">Battle History</asp:HyperLink>
+
+            <asp:HyperLink ID="exerciseUpload" runat="server" NavigateUrl="/ExerciseUpload.aspx">Exercise Upload</asp:HyperLink>
+
+            <asp:HyperLink ID="hof" runat="server" NavigateUrl="/Hof.aspx">Hall of Fame</asp:HyperLink>
+
+            <asp:HyperLink ID="viewProfile" runat="server" NavigateUrl="/Profile.aspx">My Profile</asp:HyperLink>
         </div>
-        <%--RIGHT HAND SIDE CONTENT WINDOW--%>
-        <%--This dynamic content window will display the users characters alongside their name, level and stats--%>
         <div id="content_window">
-            <div id="user_monsters">
-                <div class="image">
-                    <img src="Images/bowser.jpg" /></div>
-                <div class="stats">
-                    <p>Name: </p>
-                    <p>Level: </p>
-                    <p>Stats: </p>
+            <form id="user_monsters" runat="server">
+
+                <%--RIGHT HAND SIDE CONTENT WINDOW--%>
+                <%--This dynamic content window will display the users characters alongside their name, level and stats--%>
+
+                <div id="monsterNumbers">
+                    <asp:LinkButton ID="Monster1" runat="server" OnClick="Monster1_Click">1</asp:LinkButton>
+                    <asp:LinkButton ID="Monster2" runat="server" OnClick="Monster2_Click">2</asp:LinkButton>
+                    <asp:LinkButton ID="Monster3" runat="server" OnClick="Monster3_Click">3</asp:LinkButton>
+                    <asp:LinkButton ID="Monster4" runat="server" OnClick="Monster4_Click">4</asp:LinkButton>
                 </div>
-                <div class="image">
-                    <img src="Images/bowser.jpg" /></div>
-                <div class="stats">
-                    <p>Name: </p>
-                    <p>Level: </p>
-                    <p>Stats: </p>
+                <div>
+                    <p>Selected monster: </p>
                 </div>
-                <div class="image">
-                    <img src="Images/bowser.jpg" /></div>
-                <div class="stats">
-                    <p>Name: </p>
-                    <p>Level: </p>
-                    <p>Stats: </p>
+                <div class="monsterItem" id="monsterItem1">
+                    <div class="image">
+                        <asp:Image ID="imgMonsterImage" runat="server" />
+                    </div>
+                    <div class="stats">
+                        <asp:Label ID="lblNumber" runat="server" Text="">Monster Number: </asp:Label>
+                        <asp:Label ID="lblMonsterNumber" runat="server" Text=""> of 4</asp:Label><br />
+                        <asp:Label ID="lblName" runat="server" Text="">Name: </asp:Label>
+                        <asp:Label ID="lblMonsterName" runat="server" Text=""></asp:Label><br />
+                        <asp:Label ID="lblElement" runat="server" Text="">Element: </asp:Label>
+                        <asp:Label ID="lblMonsterElement" runat="server" Text=""></asp:Label><br />
+                        <asp:Label ID="lblLevel" runat="server" Text="">Level: </asp:Label>
+                        <asp:Label ID="lblMonsterLevel" runat="server" Text=""></asp:Label><br />
+                        <asp:Label ID="lblStep" runat="server" Text="">Step: </asp:Label>
+                        <asp:Label ID="lblMonsterStep" runat="server" Text=""></asp:Label><br />
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="Images/bowser.jpg" /></div>
-                <div class="stats">
-                    <p>Name: </p>
-                    <p>Level: </p>
-                    <p>Stats: </p>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </asp:Content>

@@ -4,6 +4,7 @@
     Description: This is the login page, simply containing username and password fields.--%>
 
 <%@ Page Title="Login" Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ActiveVideoGame.Login" MasterPageFile="Master.Master" ClientIDMode="Inherit" %>
+<%@ MasterType VirtualPath="~/Master.Master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/login.css" />
@@ -22,10 +23,10 @@
                 <div class="section">
                     <%--Error message div to be inserted here; displayed when incorrect username and/or password or when incomplete credentials are submitted--%>
                     <div class="row">
-                        <asp:TextBox Class="txtInput" ID="txtUsername" runat="server" placeholder="Username"></asp:TextBox>
+                        <asp:TextBox CssClass="txtInput" ID="txtUsername" runat="server" placeholder="Username" TabIndex="1"></asp:TextBox>
                     </div>
                     <div class="row">
-                        <asp:TextBox Class="txtInput" ID="txtPassword" runat="server" TextMode="password" placeholder="Password">ABCabc123?!</asp:TextBox>
+                        <asp:TextBox CssClass="txtInput" ID="txtPassword" runat="server" TextMode="password" placeholder="Password" TabIndex="2">ABCabc123?!</asp:TextBox>
                         <%--clicking the link below will email the uesr their password if they have entered their email address--%>
                         <a href="~/ForgotPassword.aspx">Forgot Password</a> <%--LINK TO BE AMMENDED/CREATED--%>
                     </div>

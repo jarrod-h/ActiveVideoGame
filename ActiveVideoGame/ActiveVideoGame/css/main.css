@@ -9,14 +9,10 @@ html {
 
 body {
     margin: 0;
-    -webkit-font-smoothing: antialiased;
     background-color: rgba(80, 180, 255, 1);
 }
 
-div#MainMenu {
-    width: 100%;
-    display: block;
-}
+
 
 div.navMenu {
     float: left;
@@ -75,6 +71,21 @@ a {
     display: flex;
     align-items: center;
     height: 100%;
+    width: 10%;
+    padding: 0px 10px 0px 10px;
+}
+
+#lbl_username {
+    float: left;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    height: 80%;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 0px 10px 0px 10px;
 }
 
@@ -92,6 +103,7 @@ a {
     margin-left: 5px;
     margin-right: 5px;
     padding: 0px 10px 0px 10px;
+    cursor: pointer;
 }
 
 #lnk_register {
@@ -106,6 +118,7 @@ a {
     align-items: center;
     height: 80%;
     padding: 0px 10px 0px 10px;
+    cursor: pointer;
 }
 
 Image {
@@ -122,6 +135,6 @@ footer {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0px;
+    bottom: -100px;
     left: 0;
 }

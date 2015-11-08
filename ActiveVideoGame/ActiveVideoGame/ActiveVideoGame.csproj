@@ -63,6 +63,7 @@
     <Content Include="ChallengePage.aspx" />
     <Content Include="CharacterManagement.aspx" />
     <Content Include="CharacterSelection.aspx" />
+    <Content Include="CreateCharacter.aspx" />
     <Content Include="css\challengepage.css" />
     <Content Include="css\charactermanagement.css" />
     <Content Include="css\characterselection.css" />
@@ -79,23 +80,16 @@
     <Content Include="css\profile.css" />
     <Content Include="css\register.css" />
     <Content Include="css\welcome.css" />
-    <Content Include="ExerciseManagement.aspx" />
     <Content Include="ExerciseUpload.aspx" />
     <Content Include="FightOutcome.aspx" />
     <Content Include="FightPage.aspx" />
     <Content Include="FightSummary.aspx" />
     <Content Include="Hof.aspx" />
-    <Content Include="Images\barbario.jpg" />
-    <Content Include="Images\bowser.jpg" />
-    <Content Include="Images\bulgarov.jpg" />
-    <Content Include="Images\cable.png" />
-    <Content Include="Images\harley.jpg" />
-    <Content Include="Images\henchman.png" />
-    <Content Include="Images\Leah.jpg" />
-    <Content Include="Images\leviatron.jpg" />
-    <Content Include="Images\Shaman.jpg" />
-    <Content Include="Images\shavata.jpg" />
-    <Content Include="Images\thanos.jpg" />
+    <Content Include="Images\elementImageAir.png" />
+    <Content Include="Images\elementImageDefault.png" />
+    <Content Include="Images\elementImageEarth.png" />
+    <Content Include="Images\elementImageFire.png" />
+    <Content Include="Images\elementImageWater.png" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="MainMenu.aspx" />
@@ -120,6 +114,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\User.cs" />
     <Compile Include="ChallengePage.aspx.cs">
       <DependentUpon>ChallengePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,13 +136,16 @@
     <Compile Include="CharacterSelection.aspx.designer.cs">
       <DependentUpon>CharacterSelection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExerciseManagement.aspx.cs">
-      <DependentUpon>ExerciseManagement.aspx</DependentUpon>
+    <Compile Include="CreateCharacter.aspx.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExerciseManagement.aspx.designer.cs">
-      <DependentUpon>ExerciseManagement.aspx</DependentUpon>
+    <Compile Include="CreateCharacter.aspx.designer.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\ChallengeDAL.cs" />
+    <Compile Include="DAL\MonsterDAL.cs" />
+    <Compile Include="DAL\UserDAL.cs" />
     <Compile Include="ExerciseUpload.aspx.cs">
       <DependentUpon>ExerciseUpload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -239,7 +237,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
