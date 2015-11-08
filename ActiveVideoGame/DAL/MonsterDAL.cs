@@ -131,16 +131,16 @@ namespace ActiveVideoGame.DAL
             set { _monsterName = value; }
         }
         //UserId
-        public int MonsterId
+        public int UserId
         {
-            get { return _monsterId; }
-            set { _monsterId = value; }
+            get { return _userId; }
+            set { _userId = value; }
         }
         //Username
-        public int MonsterId
+        public string UserName
         {
-            get { return _monsterId; }
-            set { _monsterId = value; }
+            get { return _username; }
+            set { _username = value; }
         }
         //ElementId
         public int ElementId
@@ -161,7 +161,7 @@ namespace ActiveVideoGame.DAL
             set { _experiencePoints = value; }
         }
         //InHof
-        public bool Email
+        public bool InHof
         {
             get { return _inHof; }
             set { _inHof = value; }
