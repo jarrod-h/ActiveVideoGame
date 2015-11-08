@@ -63,6 +63,7 @@
     <Content Include="ChallengePage.aspx" />
     <Content Include="CharacterManagement.aspx" />
     <Content Include="CharacterSelection.aspx" />
+    <Content Include="CreateCharacter.aspx" />
     <Content Include="css\challengepage.css" />
     <Content Include="css\charactermanagement.css" />
     <Content Include="css\characterselection.css" />
@@ -134,6 +135,13 @@
     </Compile>
     <Compile Include="CharacterSelection.aspx.designer.cs">
       <DependentUpon>CharacterSelection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCharacter.aspx.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateCharacter.aspx.designer.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAL\ChallengeDAL.cs" />
     <Compile Include="DAL\MonsterDAL.cs" />
